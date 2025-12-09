@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get a Quote | Evergreen Solar Works</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <style>
+      body {
+        background: #f6fafb;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .quote-card {
+        background: #fff;
+        border-radius: 18px;
+        box-shadow: 0 8px 32px rgba(11,74,115,0.10);
+        display: flex;
+        max-width: 700px;
+        width: 100%;
+        min-height: 380px;
+        overflow: hidden;
+      }
+      .quote-card-left {
+        background: linear-gradient(135deg, #0b4a73 80%, #2176ae 100%);
+        color: #fff;
+        flex: 1 1 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        font-weight: 700;
+        padding: 32px 24px;
+        text-align: center;
+      }
+      .quote-card-right {
+        flex: 1 1 60%;
+        padding: 32px 28px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .quote-form {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+      }
+      .quote-form label {
+        font-weight: 500;
+        margin-bottom: 4px;
+        color: #0b4a73;
+      }
+      .quote-form input,
+      .quote-form textarea {
+        width: 100%;
+        padding: 10px 12px;
+        border: 1px solid #e5e7eb;
+        border-radius: 6px;
+        font-size: 1rem;
+        font-family: inherit;
+        background: #f8fafc;
+        resize: none;
+      }
+      .quote-form textarea {
+        min-height: 70px;
+        max-height: 160px;
+      }
+      .quote-form button {
+        background: #0b4a73;
+        color: #fff;
+        border: none;
+        border-radius: 6px;
+        padding: 12px 0;
+        font-size: 1.1rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background 0.2s;
+      }
+      .quote-form button:hover {
+        background: #2176ae;
+      }
+      @media (max-width: 700px) {
+        .quote-card {
+          flex-direction: column;
+          max-width: 98vw;
+        }
+        .quote-card-left, .quote-card-right {
+          padding: 24px 12px;
+        }
+        .quote-card-left {
+          font-size: 1.3rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="quote-card">
+      <div class="quote-card-left">
+        Ready to get a quote?
+      </div>
+      <div class="quote-card-right">
+        <form class="quote-form">
+          <div>
+            <label for="name">Name *</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div>
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div>
+            <label for="phone">Phone Number *</label>
+            <input type="tel" id="phone" name="phone" required />
+          </div>
+          <div>
+            <label for="requirements">Requirements</label>
+            <textarea id="requirements" name="requirements" placeholder="Tell us about your energy needs..."></textarea>
+          </div>
+          <button type="submit">Get a Quote</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
