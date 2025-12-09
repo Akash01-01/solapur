@@ -322,7 +322,7 @@ section {
 }
 
 .logo {
-  height: 40px;
+  height: 55px;
   width: auto;
 }
 
@@ -344,7 +344,7 @@ section {
   }
   
   .logo {
-    height: 32px;
+    height: 44px;
   }
   
   .navbar .container {
@@ -439,7 +439,7 @@ section {
 .location-name {
   font-weight: 500;
   color: var(--primary-color);
-  font-size: 13px;
+  font-size: 16px;
 }
 
 .phone-item {
